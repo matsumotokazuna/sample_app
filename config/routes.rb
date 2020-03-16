@@ -9,5 +9,4 @@ Rails.application.routes.draw do
   get "todolists/:id/edit" => "todolists#edit", as:"edit_todolist"
 
   patch "todolists/:id" => "todolists#update", as:"update_todolist"
-
 end
