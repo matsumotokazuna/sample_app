@@ -41,6 +41,7 @@ class TodolistsController < ApplicationController
   private
 
   def list_params
+    # paramsにlistという項目があり、その中にtitle,body,imageという項目が用意されている
     params.require(:list).permit(:title,:body,:image)
   end
 
